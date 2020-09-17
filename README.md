@@ -23,8 +23,10 @@
 
 ## Configuration
 #### Show project in an OWD window iframe
-Add to the project configuration the "window" property to define the window name (for example `WindowProjectACME`) to open when you click on it.
-It must correspond to an existing window that uses the <WindowIframe> component. A demo is attached to this module.
+Add to the project configuration the "window" property to define the window name to open (for example `WindowProjectACME`) when you click on it.
+It must correspond to an existing window that uses the <WindowIframe> component.  
+
+An example of an iframe window is available in this module (WindowProjectACME.vue).
 ```json
 "example": {
   "title": "ACME",
