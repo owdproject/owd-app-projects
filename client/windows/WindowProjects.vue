@@ -1,0 +1,34 @@
+<template>
+  <Window :title="data.title" :window="data">
+
+    <Folder>
+      <ProjectItem v-for="(project, key) in projects" v-if="!project.hidden" :key="key" :project="project" />
+    </Folder>
+
+  </Window>
+</template>
+
+<script>
+  import {mapGetters} from "vuex";
+
+  import Window from "~/core/components/window/Window";
+  import Folder from '~/core/components/folder/Folder.vue'
+  import ProjectItem from "../components/project/ProjectItem";
+
+  export default {
+    name: "WindowProjects",
+    components: {
+      ProjectItem,
+      Window,
+      Folder
+    },
+    props: {
+      data: Object
+    },
+    computed: {
+      ...mapGetters({
+        projects: 'projects/list'
+      })
+    }
+  }
+</script>

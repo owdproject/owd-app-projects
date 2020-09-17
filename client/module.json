@@ -1,0 +1,42 @@
+{
+  "name": "projects",
+  "commands": true,
+  "config": true,
+  "store": true,
+  "windows": [
+    {
+      "name": "WindowProjects",
+      "title": "Projects",
+      "icon": "folder-outline",
+      "window": {
+        "menu": true,
+        "closed": true,
+        "minimized": false,
+        "width": 448,
+        "height": 240,
+        "x": -1,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "name": "WindowProjectACME",
+      "title": "ACME",
+      "icon": "bomb",
+      "color": "#f53f3f",
+      "externalUrl": "https://acme.gov",
+      "iframeUrl": "https://acme.gov",
+      "window": {
+        "menu": false,
+        "closed": true,
+        "minimized": false,
+        "resizable": false,
+        "width": 728,
+        "height": 510,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  ]
+}
