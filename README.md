@@ -23,7 +23,10 @@
 - Add the reference of this module into `owd-client/config/modules.json` 
 
 ## Configuration
-#### Show project in an OWD window iframe
+#### Add new projects
+Edit the `config/projects/config.json` file that you copied during the installation by adding all the projects you want.
+
+#### Show projects in an iframe
 Add to the project configuration the "window" property to define the window name to open (for example `WindowProjectACME`) when you click on it.
 It must correspond to an existing window that uses the <WindowIframe> component.  
 
