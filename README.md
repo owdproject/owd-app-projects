@@ -1,4 +1,4 @@
-# Project module for OWD Client
+# Projects module for OWD Client
 > The perfect module to show your portfolio in a folder-like way
 
 <p>
