@@ -48,4 +48,4 @@ An example of an iframe window is available in this module (WindowProjectACME.vu
 ```
 
 ## License
-This project is released under the [MIT License](LICENSE).
+This project is released under the [MIT License](LICENSE)
