@@ -2,7 +2,9 @@
   <Window :title="data.title" :window="data">
 
     <Folder>
-      <ProjectItem v-for="(project, key) in projects" v-if="!project.hidden" :key="key" :project="project" />
+      <template v-for="(project, key) in projects">
+        <ProjectItem v-if="!project.hidden" :key="key" :project="project" />
+      </template>
     </Folder>
 
   </Window>
