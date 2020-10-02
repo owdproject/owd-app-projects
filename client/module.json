@@ -1,14 +1,8 @@
 {
   "name": "projects",
+  "version": "1.0.0",
   "singleton": true,
   "autostart": true,
-  "version": "1.0.0",
-  "license": "MIT",
-  "homepage": "https://github.com/hacklover/owd-projects",
-  "author": {
-    "name": "hacklover",
-    "url": "https://hacklover.net"
-  },
   "commands": true,
   "config": true,
   "store": true,
@@ -47,5 +41,11 @@
         "z": 0
       }
     }
-  ]
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/hacklover/owd-projects",
+  "author": {
+    "name": "hacklover",
+    "url": "https://hacklover.net"
+  }
 }
