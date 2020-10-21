@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import FolderFile from "~/core/components/folder/FolderFile";
+  import FolderFile from "@owd-client/core/src/components/folder/FolderFile";
 
   export default {
     name: "ProjectItem",

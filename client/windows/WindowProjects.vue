@@ -13,8 +13,8 @@
 <script>
   import {mapGetters} from "vuex";
 
-  import Window from "~/core/components/window/Window";
-  import Folder from '~/core/components/folder/Folder.vue'
+  import Window from "@owd-client/core/src/components/window/Window";
+  import Folder from '@owd-client/core/src/components/folder/Folder.vue'
   import ProjectItem from "../components/project/ProjectItem";
 
   export default {
