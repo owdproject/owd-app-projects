@@ -1,6 +1,6 @@
 {
   "name": "projects",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "singleton": true,
   "autostart": true,
   "commands": true,
@@ -25,7 +25,14 @@
     {
       "name": "WindowProjectACME",
       "title": "ACME",
-      "icon": "bomb",
+      "icon": {
+        "name": "bomb",
+        "size": "28px",
+        "offset": {
+          "x": -2,
+          "y": 1
+        }
+      },
       "color": "#f53f3f",
       "externalUrl": "https://acme.gov",
       "iframeUrl": "https://acme.gov",
