@@ -1,6 +1,6 @@
 {
   "name": "projects",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "singleton": true,
   "autostart": true,
   "commands": true,
@@ -10,7 +10,7 @@
     {
       "name": "WindowProjects",
       "title": "Projects",
-      "icon": "folder-outline",
+      "icon": "mdi-folder-outline",
       "window": {
         "menu": true,
         "closed": true,
@@ -26,7 +26,7 @@
       "name": "WindowProjectACME",
       "title": "ACME",
       "icon": {
-        "name": "bomb",
+        "name": "mdi-bomb",
         "size": "28px",
         "offset": {
           "x": -2,
@@ -48,11 +48,5 @@
         "z": 0
       }
     }
-  ],
-  "license": "MIT",
-  "homepage": "https://github.com/hacklover/owd-projects",
-  "author": {
-    "name": "hacklover",
-    "url": "https://hacklover.net"
-  }
+  ]
 }
