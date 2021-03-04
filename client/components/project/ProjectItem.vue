@@ -44,9 +44,11 @@
     methods: {
       onProjectClick(e) {
         if (this.project.window) {
-          if (e) e.preventDefault();
+          if (e) {
+            e.preventDefault();
+          }
 
-          setTimeout(() => this.$store.dispatch('core/windows/windowOpen', {
+          setTimeout(() => this.$store.dispatch('core/window/windowOpen', {
             name: this.project.window,
             index: 0
           }), 100);

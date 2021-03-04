@@ -1,7 +1,7 @@
-import {Module} from "@owd-client/core";
+import {ModuleApp} from "@owd-client/core";
 import projectsStore from './store/index'
 
-export default class ProjectsModule extends Module {
+export default class ProjectsModule extends ModuleApp {
   constructor(context) {
     super(context)
   }
@@ -13,7 +13,7 @@ export default class ProjectsModule extends Module {
   loadCommands({store}) {
     return {
       'projects': function () {
-        store.dispatch('core/windows/windowOpen', 'WindowProjects');
+        store.dispatch('core/window/windowOpen', 'WindowProjects');
       }
     }
   }

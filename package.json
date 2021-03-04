@@ -1,10 +1,10 @@
 {
   "name": "owd-projects",
-  "version": "2.0.1",
+  "version": "2.0.0-alpha",
   "license": "MIT",
   "homepage": "https://github.com/hacklover/owd-projects",
   "author": {
     "name": "hacklover",
-    "url": "https://hacklover.net"
+    "url": "https://github.com/hacklover"
   }
 }

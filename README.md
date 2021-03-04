@@ -10,7 +10,7 @@
 </p>
 
 ## Demo
-[Try it out](https://hacklover.net), just open the terminal and type "projects"
+[Try it out](https://hacklover.net/client), just open the terminal and type "projects"
 
 ## Features
 - Show projects in a folder
@@ -46,6 +46,9 @@ An example of an iframe window is available in this module (WindowProjectACME.vu
   "hidden": false
 }
 ```
+
+## Compatibility
+- Open Web Desktop client v2.0.0-alpha.2
 
 ## License
 This project is released under the [MIT License](LICENSE)

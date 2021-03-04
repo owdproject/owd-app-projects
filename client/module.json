@@ -1,9 +1,13 @@
 {
   "name": "projects",
-  "version": "2.0.1",
+  "version": "2.0.0-alpha",
+  "license": "MIT",
+  "homepage": "https://github.com/hacklover/owd-projects",
+  "author": {
+    "name": "hacklover",
+    "url": "https://github.com/hacklover"
+  },
   "singleton": true,
-  "autostart": true,
-  "commands": true,
   "config": true,
   "store": true,
   "windows": [
@@ -11,12 +15,13 @@
       "name": "WindowProjects",
       "title": "Projects",
       "icon": "mdi-folder-outline",
-      "window": {
-        "menu": true,
-        "closed": true,
-        "minimized": false,
+      "menu": true,
+      "minimized": false,
+      "size": {
         "width": 448,
-        "height": 240,
+        "height": 240
+      },
+      "position": {
         "x": 0,
         "y": 0,
         "z": 0
@@ -36,13 +41,14 @@
       "color": "#f53f3f",
       "externalUrl": "https://acme.gov",
       "iframeUrl": "https://acme.gov",
-      "window": {
-        "menu": false,
-        "closed": true,
-        "minimized": false,
-        "resizable": false,
+      "menu": false,
+      "minimized": false,
+      "resizable": false,
+      "size": {
         "width": 728,
-        "height": 510,
+        "height": 510
+      },
+      "position": {
         "x": 0,
         "y": 0,
         "z": 0
