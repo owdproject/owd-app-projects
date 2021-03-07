@@ -40,7 +40,6 @@
       },
       "color": "#f53f3f",
       "externalUrl": "https://acme.gov",
-      "iframeUrl": "https://acme.gov",
       "menu": false,
       "minimized": false,
       "resizable": false,
@@ -52,6 +51,9 @@
         "x": 0,
         "y": 0,
         "z": 0
+      },
+      "metaData": {
+        "iframeUrl": "https://acme.gov"
       }
     }
   ]
