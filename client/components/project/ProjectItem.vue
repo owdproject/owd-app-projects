@@ -14,7 +14,6 @@
   import FolderFile from "@owd-client/core/src/components/folder/FolderFile";
 
   export default {
-    name: "ProjectItem",
     components: {FolderFile},
     props: {
       project: Object,
