@@ -14,7 +14,12 @@
     {
       "name": "WindowProjects",
       "title": "Projects",
-      "icon": "mdi-folder-outline",
+      "icon": {
+        "name": "mdi-folder-outline",
+        "offset": {
+          "y": -2
+        }
+      },
       "menu": true,
       "minimized": false,
       "size": {
@@ -35,7 +40,7 @@
         "size": "28px",
         "offset": {
           "x": -2,
-          "y": 1
+          "y": -2
         }
       },
       "color": "#f53f3f",
