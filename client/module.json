@@ -17,7 +17,7 @@
       "icon": {
         "name": "mdi-folder-outline",
         "offset": {
-          "y": -2
+          "y": -3
         }
       },
       "menu": true,
@@ -34,15 +34,8 @@
     },
     {
       "name": "WindowProjectACME",
-      "title": "ACME",
-      "icon": {
-        "name": "mdi-bomb",
-        "size": "28px",
-        "offset": {
-          "x": -2,
-          "y": -2
-        }
-      },
+      "title": "Project ACME",
+      "icon": "mdi-firework",
       "color": "#f53f3f",
       "externalUrl": "https://acme.gov",
       "menu": false,
