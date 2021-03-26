@@ -47,10 +47,7 @@
             e.preventDefault();
           }
 
-          setTimeout(() => this.$store.dispatch('core/window/windowOpen', {
-            name: this.project.window,
-            index: 0
-          }), 100);
+          setTimeout(() => this.$store.dispatch('core/window/windowOpen', this.project.window), 100);
         }
       }
     }
