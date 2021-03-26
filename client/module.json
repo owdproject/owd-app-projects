@@ -35,7 +35,12 @@
     {
       "name": "WindowProjectACME",
       "title": "Project ACME",
-      "icon": "mdi-firework",
+      "icon": {
+        "name": "mdi-firework",
+        "offset": {
+          "y": -1
+        }
+      },
       "color": "#f53f3f",
       "externalUrl": "https://acme.gov",
       "menu": false,
