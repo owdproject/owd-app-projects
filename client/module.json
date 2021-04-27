@@ -17,7 +17,7 @@
       "icon": {
         "name": "mdi-folder-outline",
         "offset": {
-          "y": -3
+          "y": -1
         }
       },
       "menu": true,
@@ -36,7 +36,7 @@
       "name": "WindowProjectACME",
       "title": "Project ACME",
       "icon": {
-        "name": "mdi-firework",
+        "name": "mdi-folder-outline",
         "offset": {
           "y": -1
         }
