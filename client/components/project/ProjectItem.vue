@@ -10,46 +10,44 @@
   />
 </template>
 
-<script>
-  import FolderFile from "@owd-client/core/src/components/folder/FolderFile";
+<script setup>
+  import FolderFile from "@owd-client/core/src/components/folder/FolderFile.vue";
+  import {defineProps, computed} from "vue";
+  import {useStore} from "vuex";
 
-  export default {
-    components: {FolderFile},
-    props: {
-      project: Object,
-    },
-    computed: {
-      tooltip: function () {
-        let text = this.project.title;
+  const props = defineProps({
+    project: Object
+  })
 
-        if (this.project.comingSoon === true) {
-          text += '\nComing soon ' + this.project.year
-        } else if (this.project.inactive === false) {
-          text += '\nSince ' + this.project.year
-        } else {
-          text += ' (discontinued)\n' + this.project.year;
+  const tooltip = computed(() => {
+    let text = props.project.title;
 
-          if (this.project.end > 0) {
-            text += ' - ' + this.project.end
-          }
-        }
+    if (props.project.comingSoon === true) {
+      text += '\nComing soon ' + props.project.year
+    } else if (props.project.inactive === false) {
+      text += '\nSince ' + props.project.year
+    } else {
+      text += ' (discontinued)\n' + props.project.year;
 
-        return text;
-      },
-      link: function () {
-        return this.project.url;
+      if (props.project.end > 0) {
+        text += ' - ' + props.project.end
       }
-    },
-    methods: {
-      onProjectClick(e) {
-        if (this.project.window) {
-          if (e) {
-            e.preventDefault();
-          }
+    }
 
-          setTimeout(() => this.$store.dispatch('core/window/windowOpen', this.project.window), 100);
-        }
+    return text;
+  })
+
+  const link = computed(() => props.project.url)
+
+  const store = useStore()
+
+  function onProjectClick(e) {
+    if (props.project.window) {
+      if (e) {
+        e.preventDefault();
       }
+
+      setTimeout(() => store.dispatch('core/window/windowOpen', props.project.window), 100);
     }
   }
 </script>

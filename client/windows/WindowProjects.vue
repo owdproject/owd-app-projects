@@ -1,5 +1,5 @@
 <template>
-  <Window :window="window">
+  <Window>
 
     <Folder>
       <template v-for="(project, key) in projects">
@@ -10,26 +10,13 @@
   </Window>
 </template>
 
-<script>
-  import Window from "@owd-client/core/src/components/window/Window";
+<script setup>
+  import {computed} from "vue";
+  import {useStore} from "vuex";
+  import Window from "@owd-client/core/src/components/window/app/WindowApp.vue";
   import Folder from '@owd-client/core/src/components/folder/Folder.vue'
-  import ProjectItem from "../components/project/ProjectItem";
+  import ProjectItem from "../components/project/ProjectItem.vue";
 
-  import {mapGetters} from "vuex";
-
-  export default {
-    components: {
-      ProjectItem,
-      Window,
-      Folder
-    },
-    props: {
-      window: Object
-    },
-    computed: {
-      ...mapGetters({
-        projects: 'projects/list'
-      })
-    }
-  }
+  const store = useStore()
+  const projects = computed(() => store.getters['projects/list'])
 </script>
