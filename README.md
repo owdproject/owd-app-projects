@@ -52,7 +52,7 @@ An example of an iframe window is available in this module (WindowProjectACME.vu
 ```
 
 ## Compatibility
-- Open Web Desktop client v2.0.0-alpha.3
+- Open Web Desktop client v2.0.0-beta
 
 ## License
 This project is released under the [MIT License](LICENSE)
