@@ -22,9 +22,31 @@
 - Open project link in an iframe window (optional)
 
 ## Quick install
-- Copy the content of the `client` module folder into `owd-client/src/modules/projects`
-- Copy the content of the `client/config` config folder into `owd-client/config`
-- Add the reference of this module into `owd-client/config/modules.json` 
+- Move to your client folder, then
+  ```
+  # Install this module with Npm
+  npm install hacklover/owd-app-projects
+  
+  # Or using Yarn
+  yarn add hacklover/owd-app-projects
+  ```
+- Define this module in `owd-client/client.extensions.ts`
+  ```js
+  import AboutModule from "@owd-client/core/src/modules/app/about";
+  import DebugModule from "@owd-client/core/src/modules/app/debug";
+  import ProjectsModule from "hacklover/owd-app-projects/client";
+
+  export default {
+    app: {
+      modules: [
+        AboutModule,
+        DebugModule,
+        ProjectsModule,
+      ]
+    },
+    ...
+  ```
+- Copy the content of the [client/config](https://github.com/hacklover/owd-app-projects/tree/master/client/config) folder into `owd-client/config`
 
 ## Configuration
 #### Add new projects
@@ -52,7 +74,7 @@ An example of an iframe window is available in this module (WindowProjectACME.vu
 ```
 
 ## Compatibility
-- Open Web Desktop client v2.0.0-beta
+- Open Web Desktop client v2.0.0-beta.1
 
 ## License
 This project is released under the [MIT License](LICENSE)
