@@ -7,7 +7,7 @@ import WindowProjects from "./windows/WindowProjects.vue";
 import WindowProjectACME from "./windows/WindowProjectACME.vue";
 
 export default class ProjectsModule extends ModuleApp {
-  loadModule() {
+  setup() {
     return {
       name: "projects",
       singleton: true,
@@ -69,11 +69,11 @@ export default class ProjectsModule extends ModuleApp {
     }
   }
 
-  loadStore() {
+  setupStore() {
     return projectsStore
   }
 
-  loadCommands({store}) {
+  setupCommands({store}) {
     return {
       'projects': function () {
         store.dispatch('core/window/windowOpen', 'WindowProjects');
