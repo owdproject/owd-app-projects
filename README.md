@@ -25,16 +25,16 @@
 - Move to your client folder, then
   ```
   # Install this module with Npm
-  npm install hacklover/owd-app-projects
+  npm install https://github.com/hacklover/owd-app-projects
   
   # Or using Yarn
-  yarn add hacklover/owd-app-projects
+  yarn add https://github.com/hacklover/owd-app-projects
   ```
 - Define this module in `owd-client/client.extensions.ts`
   ```js
   import AboutModule from "@owd-client/core/src/modules/app/about";
   import DebugModule from "@owd-client/core/src/modules/app/debug";
-  import ProjectsModule from "hacklover/owd-app-projects/client";
+  import ProjectsModule from "owd-app-projects/client";
 
   export default {
     app: {
