@@ -1,5 +1,5 @@
 <template>
-  <Window>
+  <WindowApp>
 
     <Folder>
       <template v-for="(project, key) in projects">
@@ -7,13 +7,12 @@
       </template>
     </Folder>
 
-  </Window>
+  </WindowApp>
 </template>
 
 <script setup>
   import {computed} from "vue";
   import {useStore} from "vuex";
-  import Window from "@owd-client/core/src/components/window/app/WindowApp.vue";
   import Folder from '@owd-client/core/src/components/folder/Folder.vue'
   import ProjectItem from "../components/project/ProjectItem.vue";
 
