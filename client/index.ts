@@ -23,8 +23,6 @@ export default class ProjectsModule extends ModuleApp {
               y: -1
             }
           },
-          menu: true,
-          minimized: false,
           size: {
             width: 448,
             height: 240
@@ -49,7 +47,6 @@ export default class ProjectsModule extends ModuleApp {
           color: "#f53f3f",
           externalUrl: "https://acme.gov",
           menu: false,
-          minimized: false,
           resizable: false,
           size: {
             width: 728,
