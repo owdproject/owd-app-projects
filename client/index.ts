@@ -18,7 +18,7 @@ export default class ProjectsModule extends ModuleApp {
           name: "WindowProjects",
           title: "Projects",
           icon: {
-            name: "mdi-folder-outline",
+            name: "mdi mdi-folder-outline",
             offset: {
               y: -1
             }
